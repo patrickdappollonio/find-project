@@ -1,0 +1,16 @@
+[package]
+name = "find-project"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0"
+clap = { version = "4.5.20", features = ["derive"] }
+
+[dev-dependencies]
+tempfile = "3.3"
+
+[profile.release]
+opt-level = "z"   # Optimize for size.
+lto = true        # Enable link time optimization.
+codegen-units = 1 # Reduce parallel code generation units.
