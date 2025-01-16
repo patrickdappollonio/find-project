@@ -100,3 +100,9 @@ $ fp autoscaler && pwd
 ### Installation
 
 Download a binary from the [releases page](https://github.com/patrickdappollonio/find-project/releases) and place it in a folder that is in your `$PATH`.
+
+Alternatively, if you're on macOS or Linux and you're a Homebrew user, you can install it via Homebrew:
+
+```bash
+brew install patrickdappollonio/tap/find-project
+```
