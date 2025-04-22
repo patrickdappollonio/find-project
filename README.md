@@ -77,13 +77,13 @@ Options:
   -V, --version              Print version
 ```
 
-Alternatively, you can wrap the binary in a Bash function to make it easier to use. Add the following to your `.bashrc` or `.bash_profile`:
+Alternatively, you can wrap the binary in a Bash function to make it easier to use. Add the following to your `.bashrc` or `.bash_profile` or any equivalent for `zsh`:
 
 ```bash
 # Name your function whatever you want, I'm using "fp" for "find project".
 # Older versions of this program used "gs".
 function fp() {
-  cd $(find-project $@)
+  cd "$(find-project "$@")"
 }
 ```
 
