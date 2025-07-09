@@ -1,5 +1,7 @@
 # `find-project`: traverse through folders with ease
 
+[![Github Downloads](https://img.shields.io/github/downloads/patrickdappollonio/find-project/total?color=orange&label=github%20downloads)](https://github.com/patrickdappollonio/find-project/releases)
+
 `find-project` is a newly updated tool that allows you to scan a given directory for folders on a depth-first basis. Simply set either the `$FP_FOLDER` environment variable (or, for backwards compatibility with my old tool, the `$GOPATH/src` folder, although only `$GOPATH` needs to be set) to the directory you want to scan, and run the tool by specifying a folder name.
 
 `find-project` will then traverse through the directory, looking for folders that match the given name. If it finds any, it will print out the full path to the folder to `stdout` (making it suitable to be used as `bash` functions, more on this below). If it doesn't find any, it will print out an error message and exit with a non-zero status code.
